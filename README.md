@@ -17,6 +17,8 @@ Pull request guidlines:
    creation functions into separate functions when possible.
  - Stuff in here should be usable as library functions / scripts and should
    not require editing to be useful.
+ - Each thing (script / function) should have an Author statement and should provide
+   attribution for any external code referenced / copied.
 
 Currently unwanted scripts:
 
