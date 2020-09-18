@@ -15,6 +15,8 @@ Pull request guidlines:
    the manouver list by the user and executed with the exec_node script.
  - Orbital mechanics calculations should be factored out of manouver node
    creation functions into separate functions when possible.
+ - Stuff in here should be usable as library functions / scripts and should
+   not require editing to be useful.
 
 Currently unwanted scripts:
 
