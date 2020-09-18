@@ -1,4 +1,5 @@
 
+// Author: Nat Tuck
 function clamp {
   parameter x_min.
   parameter x.
