@@ -1,4 +1,6 @@
 // based on https://ksp-kos.github.io/KOS/tutorials/exenode.html
+// Changes by:
+//  - Nat Tuck
 
 local nd is nextnode.
 
