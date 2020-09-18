@@ -9,6 +9,7 @@ print "Node in: " + round(nd:eta) + ", DeltaV: " + round(nd:deltav:mag).
 local max_acc is ship:maxthrust/ship:mass.
 
 // TODO: Apply rocket equation
+// maybe from: https://github.com/KSP-KOS/KSLib/blob/master/library/lib_navigation.ks
 local burn_duration is nd:deltav:mag/max_acc.
 print "Crude Estimated burn duration: " + round(burn_duration) + "s".
 
