@@ -63,7 +63,7 @@ until done
     {
         local rdv is round(nd:deltav:mag,1).
         local rdot is round(vdot(dv0, nd:deltav),1).
-        print "End burn, remain dv " + rdv + "m/s, vdot: " + rvdot.
+        print "End burn, remain dv " + rdv + "m/s, vdot: " + rdot.
         lock throttle to 0.
         break.
     }
