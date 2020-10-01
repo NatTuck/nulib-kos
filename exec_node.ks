@@ -1,3 +1,20 @@
+//Amit - added fucntion for autostaging when required during maneuver burn
+
+function doStageWhenNeeded {
+    set should_stage to false.
+    set should_stage to (ship:maxthrust = 0).
+    list engines in englist.
+    for eng in englist {
+        if eng:flameout {
+            set should_stage to true.
+          }
+    }
+    if should_stage {
+      wait 0.5.
+      stage.
+    }
+}
+
 // based on https://ksp-kos.github.io/KOS/tutorials/exenode.html
 // Changes by:
 //  - Nat Tuck
@@ -65,6 +82,7 @@ until done
         print "End burn, remain dv " + round(nd:deltav:mag,1) + "m/s, vdot: " + round(vdot(dv0, nd:deltav),1).
         set done to True.
     }
+    doStageWhenNeeded().
 }
 
 unlock steering.
